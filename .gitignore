@@ -4,4 +4,10 @@ __pycache__/
 *.pyc
 artifacts/
 logs/
-
+*.pkl
+*.csv
+mlflow.db
+final_model/
+prediction_output/
+final_model/
+valid_data/

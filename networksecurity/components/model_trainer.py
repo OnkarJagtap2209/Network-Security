@@ -26,6 +26,12 @@ from sklearn.ensemble import (
 
 import mlflow
 
+import dagshub
+import dagshub
+dagshub.init(repo_owner='OnkarJagtap2209', repo_name='Network-Security', mlflow=True)
+
+## Initialize dagshub here to track mlflow experiments in dagshub.
+
 
 
 
@@ -127,6 +133,7 @@ class ModelTrainer:
         save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
         #model pusher
         save_object("final_model/model.pkl",best_model)
+        
         
 
         ## Model Trainer Artifact
