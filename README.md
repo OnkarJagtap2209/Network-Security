@@ -116,30 +116,9 @@ The application exposes:
 | GET | `/train` | Indicates that training is disabled in production |
 | POST | `/predict` | Accepts a CSV file and returns predictions |
 
-The `/predict` endpoint:
-
-```text
-CSV upload
-    ↓
-Pandas DataFrame
-    ↓
-Load preprocessor.pkl
-    ↓
-Load model.pkl
-    ↓
-NetworkModel.predict()
-    ↓
-Add predicted_column
-    ↓
-Generate output
-```
-
-The application runs on port `8080`.
-
-
 ## API Screenshot
 
-(fastapi_ui.png)
+![FastAPI Swagger UI](deployment_images/fastapi_ui.jpeg)
 
 ---
 
@@ -189,7 +168,7 @@ GitHub Actions
 
 ## CI/CD Screenshot
 
-(deployment.png)
+![GitHub Actions CI/CD](deployment_images/deployment.png)
 
 ---
 
@@ -217,7 +196,7 @@ The GitHub Actions deployment workflow pulls the latest image from ECR and runs 
 
 ## EC2 Screenshot
 
-(running_instance.png)
+![AWS EC2 Instance](deployment_images/running_instance.jpeg)
 
 ---
 
