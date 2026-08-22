@@ -8,6 +8,12 @@ Phishing websites are designed to imitate legitimate websites and can be used to
 
 The project is implemented as an end-to-end ML pipeline rather than only a model-training notebook.
 
+## 🏗️ Project Architecture
+
+<p align="center">
+  <img src="deployment_images/architecture.png" alt="Network Security Project Architecture" width="100%">
+</p>
+
 ### Key capabilities
 
 - Data ingestion from MongoDB Atlas
